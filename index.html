@@ -1,0 +1,123 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배성빈 포트폴리오</title>
+    <style>
+      .folder-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 2rem;
+        justify-content: center;
+      }
+
+      .folder {
+        width: 150px;
+        height: 100px;
+        background-color: #f0f0f0;
+        border: 2px solid #ccc;
+        border-radius: 5px 5px 0 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .folder:hover {
+        transform: scale(1.05);
+      }
+
+      .folder::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        width: 50%;
+        height: 20px;
+        background-color: #f0f0f0;
+        border: 2px solid #ccc;
+        border-bottom: none;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .folder span {
+        font-weight: bold;
+        color: #333;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        width: 100%;
+        border-bottom: solid;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav {
+        display: flex;
+        gap: 1rem;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        background-color: #444;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+
+      .main-content {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-content h1 {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>portfolio</h1>
+    </header>
+    <main class="main-content">
+      <div class="folder">
+        <span>배성빈</span>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
